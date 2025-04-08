@@ -25,5 +25,6 @@ chose_6()
 print("Your numbers: ", chosen_6)
 print("Lotto numbers: ", draw_6)
 
-# missing count numbers
-
+# count numbers
+count_numbers = set(chosen_6) & set(draw_6)
+print(len(count_numbers))
