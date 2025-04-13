@@ -1,10 +1,15 @@
-from random import *
+from random import randint
 
 chosen_6 = list()  # empty list for 6 entered numbers
 draw_6 = set()  # empty set for 6 draw numbers
 
 def chose_6():
-    """function for enter and filtrate 6 numbers"""
+    """
+    Lotto simulator
+
+    Enter 6 number from 1 to 49. Computer will draw 6 numbers.
+    You will se if you guessed 3, 4, 5, 6 or nothing.
+    """
     while len(chosen_6) < 6:
         enter_6 = input("Enter number: ")
         try:
